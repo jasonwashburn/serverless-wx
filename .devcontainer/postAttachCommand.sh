@@ -2,6 +2,5 @@
 
 set -ex
 
-
 pip install pip-tools
 pip-sync requirements.txt dev-requirements.txt
