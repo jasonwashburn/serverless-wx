@@ -1,0 +1,2 @@
+-c requirements.in
+pytest
