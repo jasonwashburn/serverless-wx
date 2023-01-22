@@ -2,3 +2,4 @@
 pytest
 awscli-local[ver1]
 ipykernel
+pyinstrument
