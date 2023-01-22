@@ -3,3 +3,4 @@ pytest
 awscli-local[ver1]
 ipykernel
 pyinstrument
+pre-commit

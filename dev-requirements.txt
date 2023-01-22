@@ -21,6 +21,8 @@ botocore==1.29.54
     #   awscli
     #   boto3
     #   s3transfer
+cfgv==3.3.1
+    # via pre-commit
 colorama==0.4.4
     # via awscli
 comm==0.1.2
@@ -29,6 +31,8 @@ debugpy==1.6.5
     # via ipykernel
 decorator==5.1.1
     # via ipython
+distlib==0.3.6
+    # via virtualenv
 docutils==0.16
     # via awscli
 entrypoints==0.4
@@ -37,6 +41,10 @@ exceptiongroup==1.1.0
     # via pytest
 executing==1.2.0
     # via stack-data
+filelock==3.9.0
+    # via virtualenv
+identify==2.5.13
+    # via pre-commit
 iniconfig==2.0.0
     # via pytest
 ipykernel==6.20.2
@@ -63,6 +71,8 @@ nest-asyncio==1.5.6
     # via
     #   ipykernel
     #   jupyter-client
+nodeenv==1.7.0
+    # via pre-commit
 packaging==23.0
     # via
     #   ipykernel
@@ -74,9 +84,13 @@ pexpect==4.8.0
 pickleshare==0.7.5
     # via ipython
 platformdirs==2.6.2
-    # via jupyter-core
+    # via
+    #   jupyter-core
+    #   virtualenv
 pluggy==1.0.0
     # via pytest
+pre-commit==2.21.0
+    # via -r dev-requirements.in
 prompt-toolkit==3.0.36
     # via ipython
 psutil==5.9.4
@@ -98,7 +112,9 @@ python-dateutil==2.8.2
     #   botocore
     #   jupyter-client
 pyyaml==5.4.1
-    # via awscli
+    # via
+    #   awscli
+    #   pre-commit
 pyzmq==25.0.0
     # via
     #   ipykernel
@@ -129,5 +145,10 @@ traitlets==5.8.1
     #   matplotlib-inline
 urllib3==1.26.14
     # via botocore
+virtualenv==20.17.1
+    # via pre-commit
 wcwidth==0.2.6
     # via prompt-toolkit
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
