@@ -1,3 +1,5 @@
 eccodes
 xarray
 cfgrib
+matplotlib
+scipy
