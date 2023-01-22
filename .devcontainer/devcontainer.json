@@ -20,7 +20,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"onCreateCommand": "bash .devcontainer/onCreateCommand.sh",
 
-	"postAttachCommand": "bash .devcontainer/postAttachCommand.sh"
+	"postCreateCommand": "bash .devcontainer/postCreateCommand.sh"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
