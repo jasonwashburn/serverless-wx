@@ -67,6 +67,8 @@ matplotlib-inline==0.1.6
     # via
     #   ipykernel
     #   ipython
+memory-profiler==0.61.0
+    # via -r dev-requirements.in
 nest-asyncio==1.5.6
     # via
     #   ipykernel
@@ -94,7 +96,9 @@ pre-commit==2.21.0
 prompt-toolkit==3.0.36
     # via ipython
 psutil==5.9.4
-    # via ipykernel
+    # via
+    #   ipykernel
+    #   memory-profiler
 ptyprocess==0.7.0
     # via pexpect
 pure-eval==0.2.2

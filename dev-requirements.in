@@ -4,3 +4,4 @@ awscli-local[ver1]
 ipykernel
 pyinstrument
 pre-commit
+memory_profiler
