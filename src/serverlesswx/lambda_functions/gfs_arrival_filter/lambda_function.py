@@ -9,7 +9,6 @@ def lambda_handler(event, context):
     bucket = s3_event["Records"][0]["s3"]["bucket"]["name"]
     key = s3_event["Records"][0]["s3"]["object"]["key"]
     if "atmos/gfs.t" in key and "pgrb2.0p25" in key and ".idx" not in key:
-        print(f"QUEUEING - key: {key}")
+        return f"QUEUEING - bucket: {bucket} key: {key}"
     else:
-        print(f"SKIPPING - unknown filetype: {key}")
-    return bucket, key
+        return f"SKIPPING - unknown filetype: {key}"
